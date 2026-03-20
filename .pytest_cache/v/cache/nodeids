@@ -1,0 +1,8 @@
+[
+  "tests/test_profanity.py::test_case_insensitive",
+  "tests/test_profanity.py::test_empty_string",
+  "tests/test_profanity.py::test_example",
+  "tests/test_profanity.py::test_multiple_profanity",
+  "tests/test_profanity.py::test_no_profanity",
+  "tests/test_profanity.py::test_single_profanity"
+]
