@@ -1,0 +1,31 @@
+I have the following pytest test cases.
+
+Your task is to implement the function:
+
+def mask_profanity(text: str) -> str
+
+so that ALL tests pass.
+
+Constraints:
+- Case insensitive
+- Replace profanity words with *
+- Keep original sentence structure
+- Words to filter: "stupid", "idiot"
+
+[Test Code]
+from app.service import mask_profanity
+
+def test_no_profanity():
+    assert mask_profanity("hello world") == "hello world"
+
+def test_single_profanity():
+    assert mask_profanity("you are stupid") == "you are ******"
+
+def test_multiple_profanity():
+    assert mask_profanity("stupid idiot") == "****** *****"
+
+def test_case_insensitive():
+    assert mask_profanity("Stupid") == "******"
+
+def test_empty_string():
+    assert mask_profanity("") == ""
